@@ -1,3 +1,9 @@
+/*
+Escreva um programa que calcula o Índice de Massa Corporal (IMC) de uma 
+pessoa e determina a categoria de peso (baixo peso, peso normal, 
+sobrepeso, obesidade) utilizando if-else.
+*/
+
 const prompt = require('prompt-sync')();
 
 const pesoTexto = prompt("Digite seu peso em kg (ex: 75.5): ");
