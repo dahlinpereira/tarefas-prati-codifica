@@ -1,26 +1,26 @@
-# Lista de Exercícios 1 - Trilha Dev. Full Stack Jr. 2025
+# Lista de Exercícios - Trilha Dev. Full Stack Jr. 2025
 
-Este documento fornece as instruções para configurar o ambiente e executar os exercícios da **Lista de Exercícios 1 - "Estudando as Estruturas Básicas"**, referente ao Módulo 1 da Trilha Dev. Full Stack Jr. 2025.
+Este documento fornece as instruções para configurar o ambiente e executar as resoluções dos exercícios da trilha de formação Dev. Full Stack Jr. 2025.
 
-Os exercícios aqui presentes abordam conceitos fundamentais de JavaScript, como variáveis, tipos de dados, operadores, estruturas condicionais, laços de repetição e interação básica com o usuário via terminal, utilizando Node.js.
+Os exercícios aqui presentes estão organizados em pastas por tarefa e abordam conceitos fundamentais e intermediários de JavaScript, como variáveis, tipos de dados, operadores, estruturas de controle, funções, recursão, manipulação de arrays e objetos, utilizando Node.js como ambiente de execução.
 
 ## Estrutura dos Arquivos
 
-Dentro deste repositório, os arquivos da Lista de Exercícios 1 estão localizados na pasta `TarefaObrigatoria1/`. Cada arquivo `.js` nomeado sequencialmente (ex: `Exercicio_01.js`, `Exercicio_02.js`) corresponde a um desafio específico e inclui seu enunciado.
+Dentro deste repositório, os arquivos de cada lista de exercícios estão localizados em pastas nomeadas sequencialmente (ex: `TarefaObrigatoria1/`, `TarefaObrigatoria2/`). Cada arquivo `.js` dentro dessas pastas corresponde a um desafio específico e inclui seu enunciado no topo do código.
 
-Os arquivos de configuração do projeto Node.js para esta tarefa (`package.json` e `package-lock.json`) se encontram dentro da pasta `tarefas-prati-codifica/`. A pasta `node_modules/`, que contém as dependências instaladas (como a biblioteca `prompt-sync`), é intencionalmente ignorada pelo Git (via arquivo `.gitignore`) para manter o repositório mais leve. As instruções para instalação das dependências necessárias estão detalhadas abaixo.
+Os arquivos de configuração do projeto Node.js (`package.json` e `package-lock.json`) se encontram na raiz do diretório `tarefas-prati-codifica/`. A pasta `node_modules/`, que contém as dependências instaladas (como a biblioteca `prompt-sync`), é intencionalmente ignorada pelo Git (via arquivo `.gitignore`) para manter o repositório mais leve.
 
 ## Pré-requisitos
 
-Antes de prosseguir, garanta que você possui o **Node.js** instalado em sua máquina.
-* Você pode baixar a versão mais recente em [nodejs.org](https://nodejs.org/).
-* Para verificar se o Node.js está instalado, abra seu terminal (Prompt de Comando, PowerShell, Git Bash ou o terminal do seu sistema operacional) e execute:
+Antes de prosseguir, garanta que você possui o **Node.js** e o **NPM** instalados em sua máquina.
+
+* **Node.js**: Você pode baixar a versão mais recente em [nodejs.org](https://nodejs.org/). Para verificar se está instalado, abra seu terminal (Prompt de Comando, PowerShell, Git Bash, etc.) e execute:
     ```bash
     node -v
     ```
-    Você deverá visualizar a versão instalada (ex: `v18.17.0`).
+    Você deverá visualizar a versão instalada (ex: `v20.11.0`).
 
-O **NPM (Node Package Manager)** é instalado automaticamente com o Node.js e é essencial para gerenciar as bibliotecas (dependências) do projeto. Para verificar a versão do NPM:
+* **NPM (Node Package Manager)**: É instalado automaticamente com o Node.js e é essencial para gerenciar as dependências do projeto. Para verificar sua versão, execute:
     ```bash
     npm -v
     ```
@@ -29,50 +29,60 @@ O **NPM (Node Package Manager)** é instalado automaticamente com o Node.js e é
 
 Siga os passos abaixo para preparar seu ambiente e executar os exercícios:
 
-1.  **Clone o Repositório (Caso ainda não tenha feito):**
-    Se você está acessando este `README.md` online no GitHub, primeiro clone o repositório para o seu computador:
+1.  **Clone o Repositório** (Caso ainda não tenha feito):
+    Se você está acessando este `README.md` online no GitHub, primeiro clone o repositório para o seu computador.
     ```bash
-    git clone [https://github.com/SEU_USUARIO/NOME_DO_SEU_REPOSITORIO.git](https://github.com/SEU_USUARIO/NOME_DO_SEU_REPOSITORIO.git)
+    git clone https://github.com/dahlinpereira/tarefas-prati-codifica.git
     ```
-    *(Substitua `https://github.com/SEU_USUARIO/NOME_DO_SEU_REPOSITORIO.git` pela URL real do seu repositório.)*
 
-2.  **Navegue até a Pasta da Tarefa:**
-    Utilizando o terminal, acesse o diretório onde os exercícios desta lista estão localizados:
+2.  **Acesse a Pasta do Projeto**:
+    Utilizando o terminal, navegue até o diretório raiz que você acabou de clonar:
     ```bash
-    cd caminho/para/seu-repositorio/TarefaObrigatoria1
+    cd tarefas-prati-codifica
     ```
-    *(Ajuste `caminho/para/seu-repositorio/` para o local correto em sua máquina.)*
 
-3.  **Instale as Dependências do Projeto:**
-    Dentro da pasta `tarefas-prati-codifica/`, execute o comando abaixo. Ele lerá o arquivo `package.json` e instalará as bibliotecas necessárias (como `prompt-sync`) na subpasta `node_modules/`:
+3.  **Instale as Dependências do Projeto**:
+    Dentro da pasta `tarefas-prati-codifica/`, execute o comando abaixo. Ele lerá o arquivo `package.json` e instalará todas as bibliotecas necessárias para todas as tarefas (como `prompt-sync`) na subpasta `node_modules/`:
     ```bash
     npm install
     ```
+    Este passo precisa ser executado apenas uma vez.
+
+---
 
 ## Como Executar os Exercícios
 
-Com o ambiente configurado e as dependências instaladas, você pode executar cada exercício individualmente. Certifique-se de que você está no diretório `TarefaObrigatoria1/` no seu terminal.
+Com o ambiente configurado, você pode executar cada exercício individualmente. Utilize o comando `node` seguido do caminho completo do arquivo do exercício a partir da raiz `tarefas-prati-codifica/`.
 
-Utilize o comando `node` seguido do nome do arquivo do exercício:
+### TarefaObrigatoria1 - Estudando as Estruturas Básicas
 
 **Exemplos:**
+```bash
+# Para executar o primeiro exercício da Tarefa 1
+node TarefaObrigatoria1/Exercicio_01.js
 
-* Para executar o primeiro exercício:
-    ```bash
-    node Exercicio_01.js
-    ```
-* Para executar o segundo exercício:
-    ```bash
-    node Exercicio_02.js
-    ```
-    ...e assim por diante para os demais arquivos `.js` da tarefa.
+# Para executar o sexto exercício da Tarefa 1
+node TarefaObrigatoria1/Exercicio_06.js
+```
 
-Siga as instruções que aparecerem no terminal, pois alguns exercícios podem solicitar que você digite alguma informação.
+### TarefaObrigatoria2 - Aplicando conceitos intermediários em JS
+
+**Exemplos:**
+```bash
+# Para executar o primeiro exercício da Tarefa 2
+node TarefaObrigatoria2/Exercicio_01.js
+
+# Para executar o segundo exercício da Tarefa 2
+node TarefaObrigatoria2/Exercicio_02.js
+```
+
+...e assim por diante para os demais arquivos .js de cada tarefa.
+
+Siga as instruções que aparecerem no terminal, pois muitos exercícios são interativos e podem solicitar que você digite alguma informação.
 
 ## Observações Importantes
-
 * Este projeto utiliza o Node.js como ambiente de execução para os scripts JavaScript.
-* As dependências são gerenciadas pelo NPM e definidas no arquivo `package.json` localizado na pasta `tarefas-prati-codifica/`.
-* A pasta `node_modules/` é automaticamente ignorada pelo Git através do arquivo `.gitignore` e não deve ser enviada para o repositório remoto.
+* As dependências são gerenciadas pelo NPM e definidas no arquivo package.json.
+* A pasta node_modules/ é automaticamente ignorada pelo Git através do arquivo .gitignore e não deve ser enviada para o repositório remoto.
 * Certifique-se de ter seguido todos os passos de configuração para garantir a correta execução dos exercícios.
-* Em caso de dúvidas ou problemas, fique a vontade para entrar em contato comigo.
+* Em caso de dúvidas ou problemas, fique à vontade para entrar em contato.
