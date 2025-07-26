@@ -1,88 +1,59 @@
 # Lista de Exercícios - Trilha Dev. Full Stack Jr. 2025
 
-Este documento fornece as instruções para configurar o ambiente e executar as resoluções dos exercícios da trilha de formação Dev. Full Stack Jr. 2025.
+Bem-vindo ao meu repositório de atividades da Trilha de Formação Dev. Full Stack Jr. 2025. Este espaço documenta minha jornada de aprendizado, contendo as resoluções para todas as 8 atividades obrigatórias do curso.
 
-Os exercícios aqui presentes estão organizados em pastas por tarefa e abordam conceitos fundamentais e intermediários de JavaScript, como variáveis, tipos de dados, operadores, estruturas de controle, funções, recursão, manipulação de arrays e objetos, utilizando Node.js como ambiente de execução.
+Cada atividade está organizada em sua própria pasta, com um `README.md` específico detalhando seus objetivos e as instruções para execução.
 
-## Estrutura dos Arquivos
+## Estrutura do Repositório e Atividades
 
-Dentro deste repositório, os arquivos de cada lista de exercícios estão localizados em pastas nomeadas sequencialmente (ex: `TarefaObrigatoria1/`, `TarefaObrigatoria2/`). Cada arquivo `.js` dentro dessas pastas corresponde a um desafio específico e inclui seu enunciado no topo do código.
+Navegue pelas pastas abaixo para explorar cada atividade.
 
-Os arquivos de configuração do projeto Node.js (`package.json` e `package-lock.json`) se encontram na raiz do diretório `tarefas-prati-codifica/`. A pasta `node_modules/`, que contém as dependências instaladas (como a biblioteca `prompt-sync`), é intencionalmente ignorada pelo Git (via arquivo `.gitignore`) para manter o repositório mais leve.
+* **`Atividade 1:`** Estruturas Básicas de JS: Foco em variáveis, tipos de dados, operadores e estruturas de controle.
+* **`Atividade 2:`** Conceitos Intermediários em JS: Foco em funções, recursão, manipulação de arrays e objetos.
+* **`Atividade 3:`** Desenvolvimento Web Básico: Criação de páginas web estáticas com HTML5 semântico e CSS3.
+* **`Atividade 4:`** Página de Perfil Pessoal: Desenvolvimento de uma página de portfólio responsiva.
+* Atividade 5: (Em breve)
+* Atividade 6: (Em breve)
+* Atividade 7: (Em breve)
+* Atividade 8: (Em breve)
 
-## Pré-requisitos
+## Pré-requisitos Gerais
 
-Antes de prosseguir, garanta que você possui o **Node.js** e o **NPM** instalados em sua máquina.
+Para executar as atividades baseadas em `JavaScript` (Atividades 1 e 2), certifique-se de ter o `Node.js` e o `NPM` instalados.
 
-* **Node.js**: Você pode baixar a versão mais recente em [nodejs.org](https://nodejs.org/). Para verificar se está instalado, abra seu terminal (Prompt de Comando, PowerShell, Git Bash, etc.) e execute:
-    ```bash
-    node -v
-    ```
-    Você deverá visualizar a versão instalada (ex: `v20.11.0`).
+* **Node.js:** Baixe em [nodejs.org](https://nodejs.org/). Verifique a instalação com `node -v`.
+* **NPM:** Instalado com o Node.js. Verifique com `npm -v`.
 
-* **NPM (Node Package Manager)**: É instalado automaticamente com o Node.js e é essencial para gerenciar as dependências do projeto. Para verificar sua versão, execute:
-    ```bash
-    npm -v
-    ```
+## Configuração do Ambiente
 
-## Configuração do Ambiente Local
+Para as atividades que necessitam de dependências (como a 1 e 2), siga estes passos no terminal, a partir da raiz deste repositório:
 
-Siga os passos abaixo para preparar seu ambiente e executar os exercícios:
-
-1.  **Clone o Repositório** (Caso ainda não tenha feito):
-    Se você está acessando este `README.md` online no GitHub, primeiro clone o repositório para o seu computador.
-    ```bash
-    git clone https://github.com/dahlinpereira/tarefas-prati-codifica.git
-    ```
-
-2.  **Acesse a Pasta do Projeto**:
-    Utilizando o terminal, navegue até o diretório raiz que você acabou de clonar:
-    ```bash
-    cd tarefas-prati-codifica
-    ```
-
-3.  **Instale as Dependências do Projeto**:
-    Dentro da pasta `tarefas-prati-codifica/`, execute o comando abaixo. Ele lerá o arquivo `package.json` e instalará todas as bibliotecas necessárias para todas as tarefas (como `prompt-sync`) na subpasta `node_modules/`:
-    ```bash
-    npm install
-    ```
-    Este passo precisa ser executado apenas uma vez.
-
----
-
-## Como Executar os Exercícios
-
-Com o ambiente configurado, você pode executar cada exercício individualmente. Utilize o comando `node` seguido do caminho completo do arquivo do exercício a partir da raiz `tarefas-prati-codifica/`.
-
-### TarefaObrigatoria1 - Estudando as Estruturas Básicas
-
-**Exemplos:**
+1. **Clone o Repositório (se ainda não o fez)**:
 ```bash
-# Para executar o primeiro exercício da Tarefa 1
-node TarefaObrigatoria1/Exercicio_01.js
-
-# Para executar o sexto exercício da Tarefa 1
-node TarefaObrigatoria1/Exercicio_06.js
+git clone https://github.com/dahlinpereira/tarefas-prati-codifica.git
 ```
 
-### TarefaObrigatoria2 - Aplicando conceitos intermediários em JS
-
-**Exemplos:**
+2. **Acesse a Pasta do Projeto**:
 ```bash
-# Para executar o primeiro exercício da Tarefa 2
-node TarefaObrigatoria2/Exercicio_01.js
-
-# Para executar o segundo exercício da Tarefa 2
-node TarefaObrigatoria2/Exercicio_02.js
+cd tarefas-prati-codifica
 ```
 
-...e assim por diante para os demais arquivos .js de cada tarefa.
-
-Siga as instruções que aparecerem no terminal, pois muitos exercícios são interativos e podem solicitar que você digite alguma informação.
-
+3. **Instale as Dependências**:
+Este comando instalará as bibliotecas necessárias (como prompt-sync) para todas as atividades de uma só vez.
+```bash
+npm install
+```
 ## Observações Importantes
 * Este projeto utiliza o Node.js como ambiente de execução para os scripts JavaScript.
 * As dependências são gerenciadas pelo NPM e definidas no arquivo package.json.
 * A pasta node_modules/ é automaticamente ignorada pelo Git através do arquivo .gitignore e não deve ser enviada para o repositório remoto.
 * Certifique-se de ter seguido todos os passos de configuração para garantir a correta execução dos exercícios.
 * Em caso de dúvidas ou problemas, fique à vontade para entrar em contato.
+
+## Contato
+
+* **Dahlin Pereira**
+
+* **LinkedIn:** [dahlinpereira](https://www.linkedin.com/in/dahlinpereira)
+
+* **GitHub:** [dahlinpereira](https://www.github.com/dahlinpereira)
