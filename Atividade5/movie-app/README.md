@@ -1,6 +1,6 @@
 # Atividade 5 - Consumo de API com ReactJS (+praTI)
 
-Este projeto é uma aplicação web desenvolvida em React como parte da Tarefa Obrigatória 5 do programa **+praTI**. A aplicação consome a API do The Movie Database (TMDB) para permitir que usuários busquem filmes, visualizem informações detalhadas e gerenciem uma lista de favoritos pessoal.
+Este projeto é uma aplicação web desenvolvida em React como parte da Atividade 5 do programa **+praTI**. A aplicação consome a API do The Movie Database (TMDB) para permitir que usuários busquem filmes, visualizem informações detalhadas e gerenciem uma lista de favoritos pessoal.
 
 ## ✨ Funcionalidades Principais
 
@@ -41,7 +41,7 @@ git clone https://github.com/dahlinpereira/tarefas-prati-codifica.git
 Após clonar, entre na pasta específica desta atividade:
 
 ```bash
-cd tarefas-prati-codifica/TarefaObrigatoria5/movie-app
+cd tarefas-prati-codifica/Atividade5/movie-app
 ```
 
 ### **Passo 3: Instalar as Dependências**
