@@ -1,0 +1,258 @@
+/* Estilos Globais */
+:root {
+  --primary-color: #0d253f;
+  --secondary-color: #01b4e4;
+  --tertiary-color: #90cea1;
+  --background-color: #f8f9fa;
+  --text-color: #333;
+  --card-bg-color: #fff;
+  --shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--secondary-color);
+}
+
+/* Navbar */
+.navbar {
+  background-color: var(--primary-color);
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: var(--shadow);
+}
+
+.navbar h1 {
+  margin: 0;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.navbar a {
+  color: var(--tertiary-color);
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  color: white;
+}
+
+/* Formulário de Busca (Search Page) */
+.search-page form {
+  display: flex;
+  margin-bottom: 30px;
+  gap: 10px;
+}
+
+.search-page input {
+  flex-grow: 1;
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.search-page button,
+.details-button,
+.favorite-button {
+  padding: 12px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: var(--secondary-color);
+  color: white;
+  transition: background-color 0.3s;
+}
+
+.search-page button:hover,
+.details-button:hover,
+.favorite-button:hover {
+  background-color: #01a1c9;
+}
+
+/* Lista de Filmes */
+.movie-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 25px;
+}
+
+/* Card do Filme */
+.movie-card {
+  background-color: var(--card-bg-color);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s;
+}
+
+.movie-card:hover {
+  transform: translateY(-5px);
+}
+
+.movie-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.movie-card h3 {
+  font-size: 1.1rem;
+  margin: 10px 15px 5px;
+  flex-grow: 1; /* Empurra o resto para baixo */
+}
+
+.movie-card p {
+  font-size: 0.9rem;
+  margin: 0 15px 10px;
+  color: #666;
+}
+
+.details-button {
+  display: block;
+  width: calc(100% - 30px);
+  margin: 0 15px 15px;
+  text-align: center;
+  background-color: var(--primary-color);
+}
+
+.details-button:hover {
+  background-color: #0b2035;
+}
+
+
+/* Página de Detalhes */
+.details-page {
+  display: flex;
+  gap: 30px;
+  background-color: var(--card-bg-color);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+}
+
+.details-page img {
+  max-width: 300px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.details-info h2 {
+  margin-top: 0;
+  font-size: 2rem;
+  color: var(--primary-color);
+}
+
+.details-info p {
+  line-height: 1.6;
+}
+
+.favorite-button {
+  margin-top: 20px;
+  background-color: var(--tertiary-color);
+  color: var(--primary-color);
+}
+.favorite-button:hover {
+  background-color: #7bc58a;
+}
+
+
+/* Página de Favoritos */
+.favorites-page h2 {
+  color: var(--primary-color);
+  margin-bottom: 20px;
+}
+
+/* Paginação */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  gap: 15px;
+}
+
+.pagination button {
+  padding: 10px 15px;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.pagination button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.pagination button:not(:disabled):hover {
+  background-color: #0b2035;
+}
+
+.pagination span {
+  font-weight: bold;
+}
+
+
+/* Loading e Erros */
+.loading-spinner {
+  border: 5px solid #f3f3f3;
+  border-top: 5px solid var(--secondary-color);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+  margin: 50px auto;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.error-message {
+  color: #d9534f;
+  text-align: center;
+  font-size: 1.2rem;
+  margin-top: 30px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .details-page {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .details-page img {
+    max-width: 100%;
+  }
+
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
