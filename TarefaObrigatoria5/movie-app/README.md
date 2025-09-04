@@ -1,70 +1,91 @@
-# Getting Started with Create React App
+# Atividade 5 - Consumo de API com ReactJS (+praTI)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este projeto é uma aplicação web desenvolvida em React como parte da Tarefa Obrigatória 5 do programa **+praTI**. A aplicação consome a API do The Movie Database (TMDB) para permitir que usuários busquem filmes, visualizem informações detalhadas e gerenciem uma lista de favoritos pessoal.
 
-## Available Scripts
+## ✨ Funcionalidades Principais
 
-In the project directory, you can run:
+  * **Busca de Filmes:** Campo de busca para pesquisar filmes por título em tempo real.
+  * **Listagem de Resultados:** Exibição dos resultados em cards, mostrando pôster, título e ano de lançamento.
+  * **Paginação:** Navegação entre as diferentes páginas de resultados da busca.
+  * **Página de Detalhes:** Visualização completa de informações de um filme, incluindo sinopse, avaliação, diretor e elenco principal.
+  * **Lista de Favoritos:** Funcionalidade para adicionar ou remover filmes de uma lista de favoritos, que persiste localmente no navegador do usuário (`localStorage`).
+  * **Feedback Visual:** Indicadores de carregamento (`loading`) durante as requisições à API e mensagens claras em caso de erro ou resultados não encontrados.
 
-### `npm start`
+## 🛠️ Tecnologias Utilizadas
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+  * **React.js:** Biblioteca principal para a construção da interface de usuário.
+  * **React Router DOM:** Para gerenciamento de rotas e navegação entre as páginas.
+  * **Axios:** Para realizar as requisições HTTP à API do TMDB.
+  * **CSS:** Para estilização dos componentes e da aplicação de forma geral.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+-----
 
-### `npm test`
+## 🚀 Como Executar e Testar o Projeto
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Estas são as instruções para que um visitante ou avaliador possa clonar, configurar e testar a aplicação em seu ambiente local.
 
-### `npm run build`
+### **Pré-requisitos**
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Antes de começar, certifique-se de que você tem o **Node.js** e o **npm** (ou Yarn) instalados em sua máquina.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### **Passo 1: Clonar o Repositório**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Primeiro, clone o repositório principal que contém todas as tarefas:
 
-### `npm run eject`
+```bash
+git clone https://github.com/dahlinpereira/tarefas-prati-codifica.git
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### **Passo 2: Navegar até a Pasta do Projeto**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Após clonar, entre na pasta específica desta atividade:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```bash
+cd tarefas-prati-codifica/TarefaObrigatoria5/movie-app
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### **Passo 3: Instalar as Dependências**
 
-## Learn More
+Execute o comando abaixo para instalar todas as dependências necessárias, como React, Axios, etc.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```bash
+npm install
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### **Passo 4: Configurar a Chave da API (Passo Essencial)**
 
-### Code Splitting
+Para que a aplicação possa se comunicar com o TMDB, uma chave de API é necessária.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+1.  Crie uma conta no [The Movie Database (TMDB)](https://www.themoviedb.org/signup) e gere sua chave de API gratuita.
 
-### Analyzing the Bundle Size
+2.  Na raiz do projeto (`movie-app`), crie um arquivo chamado `.env`.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+3.  Dentro do arquivo `.env`, adicione a seguinte linha, substituindo `SUA_CHAVE_AQUI` pela chave que você obteve:
 
-### Making a Progressive Web App
+    ```
+    REACT_APP_TMDB_API_KEY=SUA_CHAVE_AQUI
+    ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+**Importante:** Sem este passo, a aplicação não conseguirá buscar os filmes e exibirá um erro.
 
-### Advanced Configuration
+### **Passo 5: Iniciar a Aplicação**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Com tudo configurado, inicie o servidor de desenvolvimento local:
 
-### Deployment
+```bash
+npm start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+A aplicação será aberta automaticamente em seu navegador no endereço `http://localhost:3000`.
 
-### `npm run build` fails to minify
+### **Roteiro de Testes Sugerido**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Para uma avaliação completa, siga os seguintes passos na aplicação:
+
+1.  **Buscar um filme:** Utilize a barra de busca para procurar por um filme (ex: "Matrix"). Verifique se os resultados são exibidos.
+2.  **Navegar pela paginação:** Busque por um termo genérico (ex: "love") e utilize os botões "Próxima" e "Anterior".
+3.  **Ver detalhes:** Clique no botão "Ver Detalhes" de um dos filmes. A página de detalhes com informações completas deve ser carregada.
+4.  **Adicionar um favorito:** Na página de detalhes, clique em "Adicionar aos Favoritos".
+5.  **Verificar a lista de favoritos:** Clique no link "Meus Favoritos" no menu de navegação. O filme adicionado deve estar lá.
+6.  **Remover um favorito:** Volte à página de detalhes do filme favoritado (o botão agora deve dizer "Remover dos Favoritos") e clique nele. Verifique se o filme foi removido da página "Meus Favoritos".
+7.  **Testar persistência:** Adicione um filme aos favoritos e atualize a página do navegador (F5). O filme deve permanecer na lista, confirmando o uso do `localStorage`.
