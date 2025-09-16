@@ -36,7 +36,7 @@ Para os exercícios iniciais baseados em scripts JavaScript e páginas estática
 
 1.  **Clone o Repositório (se ainda não o fez)**:
     ```bash
-    git clone [https://github.com/dahlinpereira/tarefas-prati-codifica.git](https://github.com/dahlinpereira/tarefas-prati-codifica.git)
+    git clone https://github.com/dahlinpereira/tarefas-prati-codifica.git
     ```
 2.  **Acesse a Pasta Raiz**:
     ```bash
