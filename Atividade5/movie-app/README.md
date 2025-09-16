@@ -2,7 +2,7 @@
 
 Este projeto é uma aplicação web desenvolvida em React como parte da Atividade 5 do programa **+praTI**. A aplicação consome a API do The Movie Database (TMDB) para permitir que usuários busquem filmes, visualizem informações detalhadas e gerenciem uma lista de favoritos pessoal.
 
-## ✨ Funcionalidades Principais
+## Funcionalidades Principais
 
   * **Busca de Filmes:** Campo de busca para pesquisar filmes por título em tempo real.
   * **Listagem de Resultados:** Exibição dos resultados em cards, mostrando pôster, título e ano de lançamento.
@@ -11,7 +11,7 @@ Este projeto é uma aplicação web desenvolvida em React como parte da Atividad
   * **Lista de Favoritos:** Funcionalidade para adicionar ou remover filmes de uma lista de favoritos, que persiste localmente no navegador do usuário (`localStorage`).
   * **Feedback Visual:** Indicadores de carregamento (`loading`) durante as requisições à API e mensagens claras em caso de erro ou resultados não encontrados.
 
-## 🛠️ Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
   * **React.js:** Biblioteca principal para a construção da interface de usuário.
   * **React Router DOM:** Para gerenciamento de rotas e navegação entre as páginas.
@@ -20,7 +20,7 @@ Este projeto é uma aplicação web desenvolvida em React como parte da Atividad
 
 -----
 
-## 🚀 Como Executar e Testar o Projeto
+## Como Executar e Testar o Projeto
 
 Estas são as instruções para que um visitante ou avaliador possa clonar, configurar e testar a aplicação em seu ambiente local.
 
