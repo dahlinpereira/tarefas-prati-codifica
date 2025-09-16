@@ -8,21 +8,21 @@ Cada atividade está organizada em sua própria pasta, com um `README.md` espec�
 
 Navegue pelas pastas abaixo para explorar cada atividade.
 
-  * **`Atividade 1`**: Estruturas Básicas de JS: Foco em variáveis, tipos de dados, operadores e estruturas de controle.
-  * **`Atividade 2`**: Conceitos Intermediários em JS: Foco em funções, recursão, manipulação de arrays e objetos.
-  * **`Atividade 3`**: Desenvolvimento Web Básico: Criação de páginas web estáticas com HTML5 semântico e CSS3.
-  * **`Atividade 4`**: Página de Perfil Pessoal: Desenvolvimento de uma página de portfólio responsiva.
-  * **`Atividade 5`**: **Consumo de API com ReactJS:** Uma aplicação interativa que consome a API do TMDB para buscar filmes, exibir detalhes e criar uma lista de favoritos.
-  * `Atividade 6:` (Em breve)
-  * `Atividade 7:` (Em breve)
-  * `Atividade 8:` (Em breve)
+* **`Atividade 1`**: Estruturas Básicas de JS: Foco em variáveis, tipos de dados, operadores e estruturas de controle.
+* **`Atividade 2`**: Conceitos Intermediários em JS: Foco em funções, recursão, manipulação de arrays e objetos.
+* **`Atividade 3`**: Desenvolvimento Web Básico: Criação de páginas web estáticas com HTML5 semântico e CSS3.
+* **`Atividade 4`**: Página de Perfil Pessoal: Desenvolvimento de uma página de portfólio responsiva.
+* **`Atividade 5`**: **Consumo de API com ReactJS:** Uma aplicação interativa que consome a API do TMDB para buscar filmes, exibir detalhes e criar uma lista de favoritos.
+* **`Atividade 6`**: **Estilização Avançada em React:** Implementação de uma "Mini Loja" em quatro versões, explorando CSS Global, CSS Modules, Tailwind CSS e Styled-Components.
+* `Atividade 7:` (Em breve)
+* `Atividade 8:` (Em breve)
 
 ## Pré-requisitos Gerais
 
 Para executar todas as atividades, certifique-se de ter o **Node.js** e o **NPM** instalados.
 
-  * **Node.js:** Baixe em [nodejs.org](https://nodejs.org/). Verifique a instalação com `node -v`.
-  * **NPM:** Instalado com o Node.js. Verifique com `npm -v`.
+* **Node.js:** Baixe em [nodejs.org](https://nodejs.org/). Verifique a instalação com `node -v`.
+* **NPM:** Instalado com o Node.js. Verifique com `npm -v`.
 
 -----
 
@@ -36,7 +36,7 @@ Para os exercícios iniciais baseados em scripts JavaScript e páginas estática
 
 1.  **Clone o Repositório (se ainda não o fez)**:
     ```bash
-    git clone https://github.com/dahlinpereira/tarefas-prati-codifica.git
+    git clone [https://github.com/dahlinpereira/tarefas-prati-codifica.git](https://github.com/dahlinpereira/tarefas-prati-codifica.git)
     ```
 2.  **Acesse a Pasta Raiz**:
     ```bash
@@ -53,39 +53,48 @@ Para os exercícios iniciais baseados em scripts JavaScript e páginas estática
     ```
 5.  **Para visualizar as páginas `.html`**, basta abrir o arquivo diretamente no seu navegador.
 
-### **Atividades 5 em diante (Aplicações React)**
+### **Atividades com React (5 em diante)**
 
-Para executar a aplicação da Atividade 5 e futuras:
+#### Atividade 5 (movie-app)
 
-1.  **Navegue até a Pasta da Aplicação:** A partir da raiz do repositório, entre no diretório do projeto:
-
+1.  **Navegue até a Pasta da Aplicação:**
     ```bash
     cd Atividade5/movie-app
     ```
-
-2.  **Instale as Dependências do Projeto:** Cada aplicação React tem seu próprio conjunto de dependências.
-
+2.  **Instale as Dependências:**
     ```bash
     npm install
     ```
-
-3.  **Configure a Chave de API (Passo Essencial):**
-
-      * É necessário ter uma conta no site do TMDB e uma API ativa.
-      * Crie um arquivo chamado `.env` dentro da pasta `movie-app`.
-      * Adicione sua chave da API do TMDB neste formato: `REACT_APP_TMDB_API_KEY=SUA_CHAVE_AQUI`.
-      * *Para mais detalhes, consulte o README.md dentro da pasta da atividade.*
-
+3.  **Configure a Chave de API:** Crie um arquivo `.env` na pasta `movie-app` e adicione sua chave da API do TMDB: `REACT_APP_TMDB_API_KEY=SUA_CHAVE_AQUI`.
 4.  **Inicie a Aplicação:**
-
     ```bash
     npm start
     ```
 
-    O projeto será aberto em seu navegador no endereço `http://localhost:3000`.
+#### Atividade 6 (mini-loja)
+
+Esta atividade utiliza **Vite** e contém 4 implementações diferentes.
+
+1.  **Navegue até a Pasta da Aplicação:**
+    ```bash
+    cd Atividade6
+    ```
+2.  **Instale as Dependências:**
+    ```bash
+    npm install
+    ```
+3.  **Inicie o Servidor de Desenvolvimento:**
+    ```bash
+    npm run dev
+    ```
+4.  **Como Testar as 4 Versões:**
+    * Abra o arquivo `Atividade6/src/main.jsx`.
+    * Você encontrará 4 linhas de `import`, uma para cada versão de estilo.
+    * **Descomente a linha** da versão que deseja visualizar (CSS Global, CSS Modules, Tailwind ou Styled-Components) e certifique-se de que as outras 3 estejam comentadas.
+    * Salve o arquivo, e o navegador será atualizado automaticamente.
 
 ## Contato
 
-  * **Dahlin Pereira**
-  * **LinkedIn:** [dahlinpereira](https://www.linkedin.com/in/dahlinpereira)
-  * **GitHub:** [dahlinpereira](https://www.github.com/dahlinpereira)
+* **Dahlin Pereira**
+* **LinkedIn:** [dahlinpereira](https://www.linkedin.com/in/dahlinpereira)
+* **GitHub:** [dahlinpereira](https://www.github.com/dahlinpereira)
