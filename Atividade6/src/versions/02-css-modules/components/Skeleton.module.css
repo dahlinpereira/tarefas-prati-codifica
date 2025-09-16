@@ -1,0 +1,33 @@
+.skeleton {
+  background-color: var(--color-surface);
+  border: var(--border-width) solid var(--color-border);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+}
+
+.image {
+  aspect-ratio: 1 / 1;
+  background-color: var(--color-border);
+}
+
+.content {
+  padding: var(--spacing-md);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.line {
+  height: 1em;
+  background-color: var(--color-border);
+  border-radius: 4px;
+}
+
+@keyframes pulse {
+  50% { opacity: 0.5; }
+}
+
+.image, .line {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
