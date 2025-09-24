@@ -96,7 +96,7 @@ Esta atividade utiliza **Vite** e contém 4 implementações diferentes.
     * **Descomente a linha** da versão que deseja visualizar (CSS Global, CSS Modules, Tailwind ou Styled-Components) e certifique-se de que as outras 3 estejam comentadas.
     * Salve o arquivo, e o navegador será atualizado automaticamente.
 
-### Atividade 7 (Java e POO)
+#### Atividade 7 (Java e POO)
 
 1.  **Navegue até a Pasta da Atividade:**
     ```bash
