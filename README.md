@@ -14,15 +14,18 @@ Navegue pelas pastas abaixo para explorar cada atividade.
 * **`Atividade 4`**: Página de Perfil Pessoal: Desenvolvimento de uma página de portfólio responsiva.
 * **`Atividade 5`**: **Consumo de API com ReactJS:** Uma aplicação interativa que consome a API do TMDB para buscar filmes, exibir detalhes e criar uma lista de favoritos.
 * **`Atividade 6`**: **Estilização Avançada em React:** Implementação de uma "Mini Loja" em quatro versões, explorando CSS Global, CSS Modules, Tailwind CSS e Styled-Components.
-* `Atividade 7:` (Em breve)
+* **`ListaDeTarefas7`**: **Java: Programação Orientada a Objetos:** Uma série de 8 exercícios práticos cobrindo os pilares da POO, como Encapsulamento, Herança, Polimorfismo e Padrões de Projeto.
 * `Atividade 8:` (Em breve)
 
 ## Pré-requisitos Gerais
 
-Para executar todas as atividades, certifique-se de ter o **Node.js** e o **NPM** instalados.
+As dependências variam conforme a tecnologia da atividade.
 
-* **Node.js:** Baixe em [nodejs.org](https://nodejs.org/). Verifique a instalação com `node -v`.
-* **NPM:** Instalado com o Node.js. Verifique com `npm -v`.
+* **Para atividades de JavaScript/React (1 a 6):**
+    * **Node.js:** Baixe em [nodejs.org](https://nodejs.org/). Verifique a instalação com `node -v`.
+    * **NPM:** Instalado com o Node.js. Verifique com `npm -v`.
+* **Para atividades de Java (7 em diante):**
+    * **JDK (Java Development Kit):** Versão 17 ou superior. Baixe em [adoptium.net](https://adoptium.net/). Verifique com `java -version`.
 
 -----
 
@@ -92,6 +95,25 @@ Esta atividade utiliza **Vite** e contém 4 implementações diferentes.
     * Você encontrará 4 linhas de `import`, uma para cada versão de estilo.
     * **Descomente a linha** da versão que deseja visualizar (CSS Global, CSS Modules, Tailwind ou Styled-Components) e certifique-se de que as outras 3 estejam comentadas.
     * Salve o arquivo, e o navegador será atualizado automaticamente.
+
+### Atividade 7 (Java e POO)
+
+1.  **Navegue até a Pasta da Atividade:**
+    ```bash
+    cd Atividade7
+    ```
+2.  **Compile os Arquivos:**
+    Este comando cria um diretório `out` com os arquivos compilados.
+    ```bash
+    javac -d out src/main/java/br/com/codifica/prati/tarefa7/ex*/*.java
+    ```
+3.  **Execute um Exercício Específico:**
+    Use o classpath (`-cp`) para indicar onde estão os arquivos compilados.
+    ```bash
+    # Exemplo para rodar o exercício 1
+    java -cp out br.com.codifica.prati.tarefa7.ex1.MainEx1
+    ```
+    *Altere o final do comando (`ex1.MainEx1`) para executar os outros exercícios.*
 
 ## Contato
 
